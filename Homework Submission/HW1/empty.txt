@@ -10,7 +10,11 @@ CREATE TABLE Employees (
     Commission_pct int(2),
     Manager_Id int(6),
     Department_id int(4) )
-
+INSERT INTO employees VALUES(100,'Steven','King','SKING','515.129.4567',DATE '87-06-17','AD_PRES',24000,Null,Null,90);
+INSERT INTO employees VALUES(101,'Noona','Kochhar','NKOCHHAR','515.123.4568',DATE '89-09-21','AD_VP',17000,Null,100,90);
+INSERT INTO employees VALUES(102,'Lex','De Haan','LDEHANN','515.123.4569',DATE '90-01-13','AD_VP',17000,Null,100,90);
+INSERT INTO employees VALUES(103,'Alexander','Hunold','AHUNOLD','590.423.4567',DATE '90-01-03','IT_PROG',9000,Null,102,60);
+INSERT INTO employees VALUES(104,'Bruce','Ernst','BERNST','590.423.4568',DATE '91-05-21','IT_PROG',6000,Null,103,60);
 INSERT INTO employees VALUES(107,'Diana','Lorentz','DLORENTZ','590.423.5567',DATE'99-02-07','IT_PROG',4200,NULL,103,60);
 INSERT INTO employees VALUES(124,'Kevin','Mourgos','KMOURGOS','650.123.5234',DATE'99-11-16','ST_MAN',5800,NULL,100,50);
 INSERT INTO employees VALUES(141,'Trenna','Rajs','TRAJS','650.121.8009',DATE'95-10-17','ST_CLERK',3500,NULL,124,50);

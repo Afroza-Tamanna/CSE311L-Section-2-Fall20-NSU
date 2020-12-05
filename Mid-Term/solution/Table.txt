@@ -1,0 +1,106 @@
+CREATE TABLE Catalog (
+     Sid int(9) PRIMARY KEY NOT NULL,
+     Pid int(9)  NOT NULL,
+    cost int(10)NULL)
+
+INSERT INTO catalog VALUES(1,5,0.50);
+INSERT INTO catalog VALUES(2,4,0.50);
+INSERT INTO catalog VALUES(3,8,12);
+INSERT INTO catalog VALUES(4,3,1);
+INSERT INTO catalog VALUES(5,8,8);
+INSERT INTO catalog VALUES(6,1,17);
+INSERT INTO catalog VALUES(7,8,13);
+INSERT INTO catalog VALUES(8,9,1);
+INSERT INTO catalog VALUES(9,5,2);
+INSERT INTO catalog VALUES(10,6,1247548);
+INSERT INTO catalog VALUES(11,7,1247548);
+
+CREATE TABLE Class (
+ Name VARCHAR(40) PRIMARY KEY NOT NULL,
+meets_at VARCHAR(20) NULL,
+ room VARCHAR(10)  NULL,
+ fid decimal(9,0) NULL)
+Insert into class VALUES(Data Structures,MWF 10,R128,489456522);
+Insert into class VALUES(Database Systems,MWF 12:30-1:45,1320 DCL,142519864);
+Insert into class VALUES(Operating System Design,TuTh 12-1:20,20 AVW,489456522 );
+Insert into class VALUES(Archaeology of the Incas,MWF 3-4:15,R128,248965255);
+Insert into class VALUES(Aviation Accident Investigation,TuTh 1-2:50,Q3,011564812);
+Insert into class VALUES(Air Quality Engineering,TuTh 10:30-11:45,R15,011564812);
+Insert into class VALUES(Introductory Latin,MWF 3-4:15,R12,248965255);
+Insert into class VALUES(American Political Parties,TuTh 2-3:15,20 AVW,619023588);
+Insert into class VALUES(Perception,MTuWTh 3,Q3,489221823);
+Insert into class VALUES(Multivariate Analysis,TuTh 2-3:15,R15,090873519);
+Insert into class VALUES(Patent Law,F 1-2:50,R128,090873519);
+Insert into class VALUES(Urban Economics,MWF 11,20 AVW,489221823);
+Insert into class VALUES(Organic Chemistry,TuTh 12:30-1:45,R12,489221823);
+Insert into class VALUES(Marketing Research,MW 10-11:15,1320 DCL,489221823);
+Insert into class VALUES(Seminar in American Art,M 4,R15,489221823);
+Insert into class VALUES(Orbital Mechanics,MWF 8,1320 DCL,011564812);
+Insert into class VALUES(Dairy Herd Management,TuTh 12:30-1:45,R128,356187925);
+Insert into class VALUES(Communication Networks,MW 9:30-10:45,20 AVW,141582651);
+Insert into class VALUES(Optical Electronics,TuTh 12:30-1:45,R15,254099823);
+Insert into class VALUES(Intoduction to Math,TuTh 8-9:30,R128,489221823
+);
+
+INSERT INTO enrolled VALUES(112348546,Database Systems);
+INSERT INTO enrolled VALUES(112348546,Database Systems);
+INSERT INTO enrolled VALUES(115987938,Database Systems);
+INSERT INTO enrolled VALUES(348121549,Database Systems);
+INSERT INTO enrolled VALUES(322654189,Database Systems);
+INSERT INTO enrolled VALUES(552455318,Database Systems);
+INSERT INTO enrolled VALUES(455798411,Operating System Design);
+INSERT INTO enrolled VALUES(552455318,Operating System Design);
+INSERT INTO enrolled VALUES(567354612,Operating System Design);
+INSERT INTO enrolled VALUES(112348546,Operating System Design);
+INSERT INTO enrolled VALUES(115987938,Operating System Design);
+INSERT INTO enrolled VALUES(322654189,Operating System Design);
+INSERT INTO enrolled VALUES(552455318,Communication Networks);
+INSERT INTO enrolled VALUES(455798411,Optical Electronics);
+INSERT INTO enrolled VALUES(301221823,Perception);
+INSERT INTO enrolled VALUES(301221823,Social Cognition);
+INSERT INTO enrolled VALUES(301221823,American Political Parties);
+INSERT INTO enrolled VALUES(556784565,Air Quality Engineering);
+INSERT INTO enrolled VALUES(099354543,Patent Law);
+INSERT INTO enrolled VALUES(574489456,Urban Economics);
+
+INSERT INTO faculty_data(142519864,Ivana Teach,20);
+INSERT INTO faculty_data(242518965,James Smith,68);
+INSERT INTO faculty_data(141582651,Mary Johnson,20);
+INSERT INTO faculty_data(011564812,John Williams,68);
+INSERT INTO faculty_data(254099823,Patricia Jones,68);
+INSERT INTO faculty_data(356187925,Robert Brown,12);
+INSERT INTO faculty_data(287321212,Michael Miller,12);
+INSERT INTO faculty_data(248965255,Barbara Wilson,12);
+INSERT INTO faculty_data(159542516,William Moore,33);
+INSERT INTO faculty_data(090873519,Elizabeth Taylor,11);
+INSERT INTO faculty_data(89221823,Richard Jackson,33);
+
+INSERT INTO parts_data VALUES(1,Left Handed Bacon Stretcher Cover,Red);
+INSERT INTO parts_data VALUES(2,Smoke Shifter End,Black);
+INSERT INTO parts_data VALUES(3,Acme Widget Washer,Red);
+INSERT INTO parts_data VALUES(4,Acme Widget Washer,Silver);
+INSERT INTO parts_data VALUES(5,I Brake for Crop Circles Sticker,Translucent);
+INSERT INTO parts_data VALUES(6,Anti-Gravity Turbine Generator,Cyan);
+INSERT INTO parts_data VALUES(7,Anti-Gravity Turbine Generator,Magenta);
+INSERT INTO parts_data VALUES(8,Fire Hydrant Cap,Red);
+INSERT INTO parts_data VALUES(9,7 Segment Display,Green
+);
+
+CREATE TABLE student(
+    snum decimal(9,0) PRIMARY KEY NOT NULL,
+    sname varchar(30) NULL,
+    major varchar(25) NULL,
+    level varchar(2) NULL,
+    age decimal(3,0) NULL)
+INSERT INTO student VALUES(051135593,Maria White,English,SR,21);
+INSERT INTO student VALUES(060839453,Charles Harris,Architecture,SR,22);
+INSERT INTO student VALUES(099354543,Susan Martin,Law,JR,20);
+INSERT INTO student VALUES(112348546,Joseph Thompson,Computer Science,SO,19);
+INSERT INTO student VALUES(115987938,Christopher Garcia,Computer Science,JR,20);
+INSERT INTO student VALUES(132977562,Angela Martinez,History,SR,20);
+INSERT INTO student VALUES(051135593,Maria White,English,SR,21);
+INSERT INTO student VALUES(280158572,Margaret Clark,Animal Science,FR,18);
+
+CREATE TABLE suppliers(
+    sid int(9) PRIMARY KEY NOT NULL)
+

@@ -1,6 +1,0 @@
-SELECT Employee_Id, Last_Name, Salary FROM employees 
-WHERE  Salary > (SELECT AVG(Salary) FROM employees) AND Department_id IN (SELECT Department_id FROM employees WHERE Last_Name LIKE '%u%')
-
-
-****
-For some reason nothing is shown in my query box

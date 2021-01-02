@@ -9,10 +9,12 @@ if($link === false){
 }
  
 // Attempt create table query execution
-$sql = "CREATE TABLE users(
-    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
+$sql = "CREATE TABLE  student(
+    snum NUMERIC(9,0) NOT NULL PRIMARY KEY ,
+    sname VARCHAR(50) NOT NULL UNIQUE,
+    major VARCHAR(255) NOT NULL,
+    level VARCHAR(2) NOT NULL,
+    age NUMERIC(3,0) NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 )";
 if(mysqli_query($link, $sql)){

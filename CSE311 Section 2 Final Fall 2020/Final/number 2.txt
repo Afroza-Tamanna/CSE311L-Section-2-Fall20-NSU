@@ -1,0 +1,17 @@
+a)SELECT S.sname
+FROM suppliers S
+WHERE NOT EXISTS (( SELECT P.pid
+FROM parts P )
+EXCEPT
+( SELECT C.pid
+FROM catalog C
+WHERE C.sid = S.sid ))
+
+b)
+SELECT S.sname FROM catalog C, suppliers S WHERE S.sname LIKE "%Acme Widget%" and C.sid=S.sid
+
+c)
+SELECT DISTINCT C.sid
+FROM catalog C, parts P
+WHERE P.pid = C.pid AND P.color <> 'Red' 
+

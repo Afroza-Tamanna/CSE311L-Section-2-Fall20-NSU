@@ -1,0 +1,11 @@
+a) SELECT S.sname AS Name
+FROM student S 
+WHERE S.majoR ='History' AND S.snum IN (SELECT E.snum FROM class C, enrolled E, faculty F WHERE E.cname = C.name AND C.fid= F.fid AND F.fname= 'Ivana Tech' )
+
+b)SELECT DISTINCT S.sname AS Name
+FROM student S
+WHERE S.snum IN (SELECT E1.snum
+FROM enrolled E1, enrolled E2, class C1, class C2
+WHERE E1.snum = E2.snum AND E1.cname <> E2.cname
+AND E1.cname = C1.name
+AND E2.cname = C2.name AND C1.meets_at = C2.meets_at)
